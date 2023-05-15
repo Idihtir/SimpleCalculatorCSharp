@@ -1,0 +1,31 @@
+using System;
+
+namespace Calculator
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Calculator App");
+            Console.WriteLine("-------------------");
+            
+            Console.Write("Enter the first number: ");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter the second number: ");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+
+            int sum = num1 + num2;
+            Console.WriteLine($"Sum: {sum}");
+
+            int difference = num1 - num2;
+            Console.WriteLine($"Difference: {difference}");
+
+            int product = num1 * num2;
+            Console.WriteLine($"Product: {product}");
+
+            double quotient = (double)num1 / num2;
+            Console.WriteLine($"Quotient: {quotient}");
+        }
+    }
+}
